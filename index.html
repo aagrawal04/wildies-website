@@ -25,6 +25,35 @@
 
     <!-- Custom styles for this page -->
     <link href="assets/css/index.css" rel="stylesheet">
+     <style type="text/css">
+
+
+
+.top-bar {
+    height: 35px;
+    width: 100%;
+    padding-top: 5px;
+    background-color: #000;
+}
+.search-container {
+    max-width: 950px;
+    margin: auto;
+    padding-right: 10px;
+}
+.search {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 75px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    float: right;
+}
+.search:focus {
+    width: 200px;
+}
+    </style>
 
   </head>
   <body>
@@ -69,7 +98,11 @@
                 <li><a href="#jobs">Jobs</a></li>
                 <li><a href="#donate">Donate</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                <li><div class="top-bar">
+    <div class="search-container">
+        <input class="search" type="search" placeholder="Search">
+    </div>
+</div></li>
               </ul>
             </div>
           </div>
